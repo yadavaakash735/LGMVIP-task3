@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Enrollment Form</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="col1 ">
+            <h1>Student Enrollment Form</h1>
+            <form id="form">
+                <table>
+                    <tr>
+                        <td>Full Name</td>
+                        <td class="data"><input class="inp" type="text" name="name" id="name"></td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td class="data"><input class="inp" type="email" name="email" id="email"></td>
+                    </tr>
+                    <tr>
+                        <td>Phone Number</td>
+                        <td class="data"><input class="inp" type="tel" name="phone" id="phone"></td>
+                    </tr>
+                    <tr>
+                        <td>Image Link</td>
+                        <td class="data"><input class="inp" type="text" name="photo" id="photo"></td>
+                    </tr>
+                    <tr rowspan="2">
+                        <td>Gender</td>
+                        <td class="data"><span><input type="radio" class="gen" name="gender" id="Male" value="Male">Male</span><span><input class="gen" type="radio" name="gender" id="Female" value="Female">Female</span></td>
+                    </tr>
+                    <tr rowspan="3">
+                        <td>Skills</td>
+                        <td class="data">
+                            <span><input  class="skill" type="checkbox" name="skill" id="Javascript" value="Javascript">Javascript </span>
+                            <span><input class="skill" type="checkbox" name="skill" id="Css" value="Css">Css</span>
+                            <span><input class="skill" type="checkbox" name="skill"  id="HTML" value="HTML" >HTML </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="data"><input class="submit1" type="button" onclick="enrolled()" value="Submit"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="data"><input class="reset" type="reset" value="Reset"></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <div class="col2 " id="c">
+            <h1>Enrolled Students</h1>
+             <div class="ss" id="submit">
+
+            </div> 
+        </div>
+    </div>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+    <script src="index.js"></script>
+</body>
+
+</html>
